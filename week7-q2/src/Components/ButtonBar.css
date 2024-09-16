@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 700px;
+    height: 32px;
+    box-shadow: 0px 0px 5px -2px;
+    border-radius: 5px;
+    background-color: white;
+}
+.button{
+    padding: 3px 19px;
+    border-radius: 10px;
+}
+.default{
+    background-color: orange;
+    padding: 3px 19px;
+    border-radius: 10px;
+}
