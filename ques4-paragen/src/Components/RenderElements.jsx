@@ -6,19 +6,24 @@ function RenderElements() {
    const [count, setCount] = useState(0);
   const setParaCount=useSetRecoilState(ParaCount);
   return (
-    <div>
-        <div className='heading'>Para Generator</div>
-        <div>
-            <input className='inputbox' type="text" placeholder='Enter Number of Words' onChange={(e)=>{
-              const value=e.target.value;
-              setCount(value);
-            }}/>
-            <button className='button' onClick={()=>{
-              setParaCount(count)
-            }}>Generate</button>
+    <>
+      <div className="paragraphGenerator">
+        <h1 className="heading">Para Generator</h1>
+        <div className="inputInterface">
+            <input id="inputBox" type="text" placeholder='Enter Number of Words' onChange={(e)=>{
+               const value=e.target.value;
+               setCount(value);
+             }}/>
+          <span>
+            <button onClick={()=>{
+               setParaCount(count)
+             }}>Generate</button>
+          </span>
         </div>
-    </div>
-  )
-}
+      </div>
+   {/* <div className="inputPara">{inputPara}</div> */}
+    </>
+  
+)}
 
 export default RenderElements

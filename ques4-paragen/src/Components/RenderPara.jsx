@@ -15,8 +15,8 @@ function RenderPara() {
   }
   
    
-  return <div>
-    <div>{para}</div> 
+  return <div className="inputPara ">
+      {para}
     </div>;
 }
 

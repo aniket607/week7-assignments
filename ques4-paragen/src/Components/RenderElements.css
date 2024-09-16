@@ -1,25 +1,38 @@
-body{
+.paragraphGenerator {
+    /* margin-top: 20px; */
     display: flex;
-    align-content: center;
-    justify-items: center;
-    margin: 100px;
-}
-.heading{
-    font-weight: bolder;
-    font-size: x-large;
-    display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
-}
-.inputbox{
-    width: 600px;
-    height: 40px;
-}
-.button{
-    height: 46px;
-    border-radius: 15px;
-    width: 93px;
-    color: white;
-    background: black;
+    flex-direction: column;
+  }
+  
+  .inputInterface {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  #inputBox {
+    font-size: 20px;
+    margin: 10px;
+    width: 800px;
+    padding: 10px;
+  }
+  
+  button {
+    font-size: 14px;
+    padding: 15px 31px;
     border: none;
-}
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+  }
+  .inputPara {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    font-size: 21px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
